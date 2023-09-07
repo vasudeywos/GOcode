@@ -36,8 +36,8 @@ func main() {
 		stud:=student{
 			Name:row[1],
 			BITS_ID:row[0],
-			Email_Id:row[2],
-			Branch:row[3],
+			Email_Id:"f"+row[0][0:5]+row[0][9:13]+"@pilani.bits-pilani.ac.in",
+			Branch:row[1][5:7],
 		}
 		studentArr = append(studentArr, stud)
 		studentInstance[row[1]]=stud
